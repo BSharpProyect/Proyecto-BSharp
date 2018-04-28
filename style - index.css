@@ -10,8 +10,6 @@ body{
     background-size:cover; 
 }
 
-/* Configuración de @Media screen*/ 
-
 /* Configuración del header */
 header{
     height: 70px;
@@ -24,7 +22,7 @@ header{
 .contenido-titulo-menu a:visited{color:white;}
 
 .titulo-proyecto-bsharp{
-    width: 90%;
+    width: 50%;
     float: left;
     height: 100%;
     box-sizing: border-box;
@@ -36,22 +34,100 @@ header{
     color: white;
 }
 
-.menu-de-inicio{
-    width: 10%;
-    float:right;
-    height: 100%;
-    box-sizing: border-box;
-    padding-top: 20px;
-    font-size: 2em;
+.menu-de-inicio{display: none; width: 30%;}
+
+.menu-de-inicio-escritorio{
+    width: 50%;
+    float: left;
     padding-right: 2%;
     padding-left: 2%;
-    color: white;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width:500px){
+.menu-de-inicio-escritorio-usuario-ingresar{
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    box-sizing: border-box;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 0.9em;
+}
 
-    .titulo-proyecto-bsharp{font-size:1.5em; padding-top:20px;}
+.menu-de-inicio-escritorio-contraseña{
+    width: 30%;
+    text-align: left;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 0.9em;
+}
 
-    .menu-de-inicio{font-size: 1.5em; padding-top: 23px;}
+.menu-de-inicio-escritorio-boton-ingresar{
+    width: 30%;
+    text-align: left;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 0.9em;
+}
+
+.texto-nombre-de-usuario{display: block; color: white; text-shadow: black 1px 1px 1px;}
+.formulario-ingresar{display:block;}
+.texto-contraseña{display:block; color: white; text-shadow: black 1px 1px 1px;}
+.formulario-contraseña{display:block;}
+
+.boton-ingresar{display:block;}
+
+input[type="submit"]{
+    background: white;;
+    border:none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    color: black;
+    box-shadow: black 0px 0px 2px;
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="submit"]:hover{
+    background: #e2e2e2;
+    border-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+input[type="text"]{width: 150px;}
+
+/* Configuración de @Media screen*/ 
+
+@media screen and (max-width:1100px){
+    input[type="text"]{width: 110px;}
+}
+
+@media screen and (max-width:800px){
+
+    .titulo-proyecto-bsharp{font-size:1.5em; padding-top:20px; width: 90%;}
+
+    .menu-de-inicio{
+        width: 10%;
+        float:right;
+        height: 100%;
+        box-sizing: border-box;
+        padding-right: 2%;
+        padding-left: 2%;
+        color: white;
+        display: initial;
+        font-size: 1.5em; 
+        padding-top: 23px;
+    }
+
+    .menu-de-inicio-escritorio{display: none;}
 
 }
