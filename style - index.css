@@ -82,7 +82,7 @@ header{
 
 .boton-ingresar{display:block;}
 
-input[type="submit"]{
+.menu-de-inicio-boton-ingresar-estilo{
     background: white;;
     border:none;
     border-radius: 10px 10px 10px 10px;
@@ -93,7 +93,7 @@ input[type="submit"]{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-input[type="submit"]:hover{
+.menu-de-inicio-boton-ingresar-estilo:hover{
     background: #e2e2e2;
     border-color: white;
     border-radius: 10px 10px 10px 10px;
@@ -103,7 +103,52 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 
-input[type="text"]{width: 150px;}
+input[type="text"]{width: 150px;} 
+
+/* Configuración del formulario */
+
+.formulario-de-registro{
+    background: rgb(0,0,0, 0.2);
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+    margin-top: 5%;
+    border-radius: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: #000000 0px 0px 5px;
+}
+
+.formulario-de-registro input[type="text"]{width: 100%; margin-top: 5px; margin-bottom: 20px;} 
+
+.formulario-de-registro input[type="submit"]{
+    text-align: center;
+    margin-top: 20px;
+    border: thin solid white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 1.3em;
+    background: none;
+    color: white;
+}
+
+.formulario-de-registro input[type="submit"]:hover{
+    background: #ffffff;
+    color: black;
+    cursor: pointer;
+}
+
+.formulario-de-registro-boton-submit{text-align: center;}
+
+.formulario-de-registro .texto-eres-nuevo{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 /* Configuración de @Media screen*/ 
 
@@ -129,5 +174,7 @@ input[type="text"]{width: 150px;}
     }
 
     .menu-de-inicio-escritorio{display: none;}
+
+    .formulario-de-registro{margin-top: 10%; width: 95%;}
 
 }
