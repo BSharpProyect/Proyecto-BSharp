@@ -38,17 +38,17 @@
         <div class="separador"></div>
         <div class="formulario-de-registro">
             <div class="texto-eres-nuevo">¿Eres nuevo?</div>
-            <form class="formulario-de-registro-formulario">
+            <form class="formulario-de-registro-formulario" method="POST" action="index-procesarFormularios.php">
                 Nombre de usuario:<br>
-                <input type="text" max="20"><br>
+                <input type="text" max="20" name="usuario"><br>
                 Correo electrónico:<br>
-                <input type="text" max="50"><br>
+                <input type="text" max="50" name="email"><br>
                 Contraseña:<br>
-                <input type="text" max="50"><br>
+                <input type="text" max="50" name="contrasenia"><br>
                 Repetir contraseña:<br>
-                <input type="text" max="50"><br>
-                <div class="formulario-de-registro-boton-submit"><input type="submit" value="Registrarte"></div>
-
+                <input type="text" max="50" name="contraseniaRepetir"><br>
+                <div class="formulario-de-registro-boton-submit"><input type="submit" value="Registrarte" name="submitNuevoUsuario"></div>
+                
             </form>
         </div>
         <!-- fin header -->
