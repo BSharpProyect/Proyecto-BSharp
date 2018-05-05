@@ -5,7 +5,7 @@
 
 body{
     height: 100%;
-    background-image: url(index-fondo.jpg);
+    background-image: url(index_fondo.jpg);
     background-attachment: fixed;
     background-size:cover; 
 }
